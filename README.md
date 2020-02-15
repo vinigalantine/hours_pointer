@@ -1,2 +1,4 @@
-# hours_pointer
+# Hours Pointer
 Apontador de Horas
+
+<!-- CodeIgnite Infos -->
