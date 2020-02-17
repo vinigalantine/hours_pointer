@@ -1,3 +1,8 @@
 .has-error{
 	color: red;
 }
+
+.custom-table{
+	max-height: 500px;
+	overflow: auto;
+}

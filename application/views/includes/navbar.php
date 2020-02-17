@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-    <div class="sidebar-brand-icon rotate-n-15">
+    <div class="sidebar-brand-icon">
       <i class="fas fa-clock"></i>
     </div>
     <div class="sidebar-brand-text mx-3">Aponta Horas</div>
