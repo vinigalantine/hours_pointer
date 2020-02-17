@@ -15,7 +15,7 @@
 						</div>
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12">
-								<button class="btn btn-info form-control"type="button" onclick="pointTime()">
+								<button class="btn btn-info form-control" type="button" data-toggle="modal" data-target="#createUser">
 									<i class="fas fa-user"></i>
 									Adicionar Usuário
 								</button>
@@ -33,7 +33,7 @@
 								</button>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12">
-								<button class="btn btn-secondary form-control" type="button" onclick="pointTime()">
+								<button class="btn btn-secondary form-control" type="button" data-toggle="modal" data-target="#soclicitationModal" >
 									<i class="fas fa-hourglass"></i>
 									Solicitar inclusão de ponto
 								</button>
@@ -105,8 +105,45 @@
 		</div>
 	</div>
 	<!-- Modals -->
-
+	<div class="modal fade" id="soclicitationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Cadastrar usuário</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<?php if($this->session->userdata('user')->type_id == 2){ ?>
+		<div class="modal fade" id="createUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Cadastrar usuário</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	<?php } ?>
 </body>
 <footer>
